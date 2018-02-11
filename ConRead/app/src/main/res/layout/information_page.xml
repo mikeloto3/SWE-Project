@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akoni.conread.TabMenu$PlaceholderFragment">
+
+
+    <ListView
+        android:id="@+id/electricInformation"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/electricInformation"
+        android:layout_alignStart="@+id/electricInformation"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="17dp"
+        android:text="Electric Information"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/waterInformation"
+        android:layout_alignStart="@+id/textView16"
+        android:text="Water Information"
+        android:textSize="16dp" />
+
+    <ListView
+        android:id="@+id/waterInformation"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/electricInformation"
+        android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Note" />
+
+</RelativeLayout>

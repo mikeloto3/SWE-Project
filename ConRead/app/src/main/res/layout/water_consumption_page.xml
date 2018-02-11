@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akoni.conread.TabMenu$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/water_image"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp" />
+
+    <Button
+        android:id="@+id/water_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/water_image"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="19dp"
+        android:layout_toStartOf="@+id/water_consumption"
+        android:text="capture image" />
+
+    <Button
+        android:id="@+id/water_consumption"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/water_image"
+        android:layout_alignTop="@+id/water_upload"
+        android:layout_marginEnd="9dp"
+        android:text="water consumption page" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/water_image"
+        android:layout_below="@+id/water_consumption"
+        android:layout_marginTop="27dp"
+        android:text="Date Captured:" />
+
+    <Spinner
+        android:id="@+id/wtr_month"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/wtr_date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wtr_month"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/wtr_month" />
+
+    <Spinner
+        android:id="@+id/wtr_year"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wtr_date"
+        android:layout_toEndOf="@+id/wtr_date" />
+
+
+</RelativeLayout>

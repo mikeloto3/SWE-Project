@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akoni.conread.TabMenu$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/electric_image"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp" />
+
+    <Button
+        android:id="@+id/electric_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/electric_image"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:text="Capture image" />
+
+    <Button
+        android:id="@+id/electric_consumption"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/es_year"
+        android:layout_alignTop="@+id/electric_capture"
+        android:layout_marginEnd="8dp"
+        android:text="electric consumption page" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/electric_image"
+        android:layout_below="@+id/electric_consumption"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="28dp"
+        android:text="Date Captured:" />
+
+    <Spinner
+        android:id="@+id/es_month"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/es_date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/es_month"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/es_month" />
+
+    <Spinner
+        android:id="@+id/es_year"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/es_date"
+        android:layout_toEndOf="@+id/es_date" />
+
+
+</RelativeLayout>
